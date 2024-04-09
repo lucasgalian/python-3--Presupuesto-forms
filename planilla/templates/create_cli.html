@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crear Clientes</h2> 
+    
+        <div class="card">
+            <div class="card-body">
+                
+                <form action =""   method="post">
+                    {% csrf_token %}
+                    
+                    {{ form }}
+              
+                    <br>
+                    <input type="reset" value="Cancelar" class="btn btn-secondary">
+                    <button type="submit" id="btnEnviar" class="button" >Enviar</button>
+                </form>
+        </div>
+    </div>
+   
+
+
+<a href= "{% url 'home' %}">Atras</a>
+</body>
+</html>
